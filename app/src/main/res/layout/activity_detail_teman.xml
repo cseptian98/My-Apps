@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailTeman">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNamaTeman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/nama"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvNIMTeman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/nim"
+            android:layout_below="@id/tvNamaTeman"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvKelasTeman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/kelas"
+            android:layout_below="@id/tvNIMTeman"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvKelasTeman"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:id="@+id/tvTelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Nomor Telepon" />
+
+                <TextView
+                    android:id="@+id/tvTelpTeman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    tools:text="@string/noTelp"
+                    android:layout_below="@id/tvTelp"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onClick"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/tvEmailTeman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    tools:text="@string/email"
+                    android:layout_below="@id/tvEmail"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layIg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onClick"
+                android:background="@drawable/item_background">
+
+                <TextView
+                    android:id="@+id/tvIg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Instagram" />
+
+                <TextView
+                    android:id="@+id/tvIgTeman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    tools:text="@string/akunIG"
+                    android:layout_below="@id/tvIg"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
